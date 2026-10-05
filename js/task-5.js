@@ -29,8 +29,7 @@ const span = document.querySelector('.color');
 btn.addEventListener('click', (event) => {
   const color = getRandomHexColor();
   body.style.backgroundColor = color;
-  span.textContent = '-';
-  span.insertAdjacentHTML('beforeend', `${color}`);
+  span.textContent = color;
 });
 
 

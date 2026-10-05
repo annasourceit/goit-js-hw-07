@@ -16,12 +16,12 @@
 // У консолі має бути виведено таке повідомлення:
 
 const categories = document.querySelectorAll('.item');
-console.log(`Numbers of categories: ${categories.length}`);
+console.log(`Number of categories: ${categories.length}`);
 const lists = document.querySelectorAll('.item ul');
 const headers = document.querySelectorAll('.item h2');
 for (let i = 0; i < headers.length; i++) {  
      console.log(`Category: ${headers[i].textContent}`); 
-     console.log(`Elemens : ${lists[i].children.length}`);
+     console.log(`Elements : ${lists[i].children.length}`);
 }
 
 

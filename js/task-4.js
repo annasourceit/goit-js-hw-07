@@ -29,13 +29,14 @@ form.addEventListener('submit', (event) => {
     const formData = new FormData(event.target);
     const pas = formData.get('password').trim();
     const email = formData.get('email').trim();
-    if (!pas || !email) {
-        alert('All form fields must be filled in');
-    }
     const obj = {
         email: email,
         password: pas,
     }
-    console.log(obj);
+    if (!pas || !email) {
+        alert('All form fields must be filled in');
+    } else {
+        console.log(obj);
+    }
     form.reset();
 });
